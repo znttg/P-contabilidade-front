@@ -26,3 +26,14 @@ a {
 .layout-theme-light {
     background-color: #edf1f5;
 }
+
+.home-card {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    .img-home {
+        width: 100%;
+    }
+}

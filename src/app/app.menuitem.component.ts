@@ -18,7 +18,7 @@ import { AppMainComponent } from './app.main.component';
 				<i [ngClass]="item.icon" class="layout-menuitem-icon"></i>
 				<span>{{item.label}}</span>
 				<span class="menuitem-badge" *ngIf="item.badge">{{item.badge}}</span>
-				<i class="pi pi-fw {{active ? 'pi-angle-up' : 'pi-angle-down'}} ml-auto" *ngIf="item.items"></i>
+				<!-- <i class="pi pi-fw {{active ? 'pi-angle-up' : 'pi-angle-down'}} ml-auto" *ngIf="item.items"></i> -->
 			</a>
 			<a (click)="itemClick($event)" *ngIf="(item.routerLink && !item.items) && item.visible !== false" [ngClass]="item.class"
 			   [routerLink]="item.routerLink" routerLinkActive="active-menuitem-routerlink router-link-exact-active"
