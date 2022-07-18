@@ -88,7 +88,6 @@ import { TreeSelectModule } from 'primeng/treeselect';
 import { TreeTableModule } from 'primeng/treetable';
 import { VirtualScrollerModule } from 'primeng/virtualscroller';
 
-import { AppCodeModule } from './components/app-code/app.code.component';
 import { AppComponent } from './app.component';
 import { AppMainComponent } from './app.main.component';
 import { AppTopBarComponent } from './app.topbar.component';
@@ -97,7 +96,7 @@ import { AppMenuComponent } from './app.menu.component';
 import { AppMenuitemComponent } from './app.menuitem.component';
 
 import { HomeComponent } from './components/home/home.component';
-import { TableComponent } from './components/table/table.component';
+import { TableComponent } from './components/conta-contabil/conta-contabil.component';
 
 import { CountryService } from './service/countryservice';
 import { CustomerService } from './service/customerservice';
@@ -197,7 +196,6 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
         TreeSelectModule,
         TreeTableModule,
         VirtualScrollerModule,
-        AppCodeModule,
         StyleClassModule,
     ],
     declarations: [

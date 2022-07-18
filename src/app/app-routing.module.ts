@@ -2,7 +2,7 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './components/home/home.component';
 import { AppMainComponent } from './app.main.component';
-import { TableComponent } from './components/table/table.component';
+import { TableComponent } from './components/conta-contabil/conta-contabil.component';
 import {DashboardComponent} from "./components/dashboard/dashboard.component";
 @NgModule({
     imports: [
