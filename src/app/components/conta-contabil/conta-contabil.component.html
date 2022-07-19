@@ -2,7 +2,7 @@
 	<div class="col-12">
 		<div class="card">
 			<h5>Manter Conta Contábil</h5>
-			<p-table #dt1 [value]="" dataKey="id" [rows]="10" [loading]="loading" [rowHover]="true" styleClass="p-datatable-gridlines" [paginator]="true" [globalFilterFields]="['name','country.name','representative.name','status']" responsiveLayout="scroll">
+			<p-table #dt1 [value]="customers1" dataKey="id" [rows]="10" [loading]="loading" [rowHover]="true" styleClass="p-datatable-gridlines" [paginator]="true" [globalFilterFields]="['name','country.name','representative.name','status']" responsiveLayout="scroll">
 				<ng-template pTemplate="caption">
 					<div class="flex justify-content-between flex-column sm:flex-row">
 						<button pButton label="Limpar" class="p-button-outlined mb-2" icon="pi pi-filter-slash" (click)="clear(dt1)"></button>
@@ -25,6 +25,84 @@
 								<p-columnFilter type="text" field="name" display="menu" placeholder="Search by name"></p-columnFilter>
 							</div>
 						</th>
+						<th>
+							<div class="flex justify-content-between align-items-center">
+								Descrição
+								<p-columnFilter type="text" field="name" display="menu" placeholder="Search by name"></p-columnFilter>
+							</div>
+						</th>
+                        <th>
+							<div class="flex justify-content-between align-items-center">
+								Conta Agrupadora
+								<p-columnFilter type="text" field="name" display="menu" placeholder="Search by name"></p-columnFilter>
+							</div>
+						</th>
+                        <th>
+							<div class="flex justify-content-between align-items-center">
+								Previc
+								<p-columnFilter type="text" field="name" display="menu" placeholder="Search by name"></p-columnFilter>
+							</div>
+						</th>
+                        <th>
+							<div class="flex justify-content-between align-items-center">
+								Conta eliminação
+								<p-columnFilter type="text" field="name" display="menu" placeholder="Search by name"></p-columnFilter>
+							</div>
+						</th>
+                        <th>
+							<div class="flex justify-content-between align-items-center">
+								Retificadora
+								<p-columnFilter type="text" field="name" display="menu" placeholder="Search by name"></p-columnFilter>
+							</div>
+						</th>
+                        <th>
+							<div class="flex justify-content-between align-items-center">
+								Agrupadora
+								<p-columnFilter type="text" field="name" display="menu" placeholder="Search by name"></p-columnFilter>
+							</div>
+						</th>
+                        <th>
+							<div class="flex justify-content-between align-items-center">
+								Auxiliar
+								<p-columnFilter type="text" field="name" display="menu" placeholder="Search by name"></p-columnFilter>
+							</div>
+						</th>
+                        <th>
+							<div class="flex justify-content-between align-items-center">
+								Conformidade
+								<p-columnFilter type="text" field="name" display="menu" placeholder="Search by name"></p-columnFilter>
+							</div>
+						</th>
+                        <th>
+							<div class="flex justify-content-between align-items-center">
+								Saldo Zero
+								<p-columnFilter type="text" field="name" display="menu" placeholder="Search by name"></p-columnFilter>
+							</div>
+						</th>
+                        <th>
+							<div class="flex justify-content-between align-items-center">
+								Natureza
+								<p-columnFilter type="text" field="name" display="menu" placeholder="Search by name"></p-columnFilter>
+							</div>
+						</th>
+                        <th>
+							<div class="flex justify-content-between align-items-center">
+								Saldo Virado
+								<p-columnFilter type="text" field="name" display="menu" placeholder="Search by name"></p-columnFilter>
+							</div>
+						</th>
+                        <th>
+							<div class="flex justify-content-between align-items-center">
+								Nível
+								<p-columnFilter type="text" field="name" display="menu" placeholder="Search by name"></p-columnFilter>
+							</div>
+						</th>
+                        <th>
+							<div class="flex justify-content-between align-items-center">
+								Tipo Auxiliar
+								<p-columnFilter type="text" field="name" display="menu" placeholder="Search by name"></p-columnFilter>
+							</div>
+						</th>
 					</tr>
 				</ng-template>
 				<ng-template pTemplate="body" let-customer>
@@ -35,9 +113,47 @@
                             <button pButton pRipple icon="pi pi-plus" class="flex align-items-center justify-content-center border-round text-white text-xl" [ngStyle]="{width: '2.5rem', height: '2.5rem'}"></button>
 						</td>
                         <td style="min-width: 12rem;">
-							{{customer.name}}
+							00000000000
 						</td>
-
+						<td style="min-width: 12rem;">
+							00000000000
+						</td>
+                        <td style="min-width: 12rem;">
+							00000000000
+						</td>
+                        <td style="min-width: 12rem;">
+							00000000000
+						</td>
+                        <td style="min-width: 12rem;">
+							00000000000
+						</td>
+                        <td style="min-width: 12rem;">
+							00000000000
+						</td>
+                        <td style="min-width: 12rem;">
+							00000000000
+						</td>
+                        <td style="min-width: 12rem;">
+							00000000000
+						</td>
+                        <td style="min-width: 12rem;">
+							00000000000
+						</td>
+                        <td style="min-width: 12rem;">
+							00000000000
+						</td>
+                        <td style="min-width: 12rem;">
+							00000000000
+						</td>
+                        <td style="min-width: 12rem;">
+							00000000000
+						</td>
+                        <td style="min-width: 12rem;">
+							00000000000
+						</td>
+                        <td style="min-width: 12rem;">
+							00000000000
+						</td>
 					</tr>
 				</ng-template>
 				<ng-template pTemplate="emptymessage">
